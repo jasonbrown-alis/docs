@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Make a request to a product | alis.exchange</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="../.vuepress/public/assets/images/_EX.png">
+    <meta name="description" content="This is my first VuePress site">
+    
+    <link rel="preload" href="/assets/css/0.styles.8487be1e.css" as="style"><link rel="preload" href="/assets/js/app.d4e0bb3c.js" as="script"><link rel="preload" href="/assets/js/2.51f44511.js" as="script"><link rel="preload" href="/assets/js/12.928467b4.js" as="script"><link rel="prefetch" href="/assets/js/10.5eb75ccf.js"><link rel="prefetch" href="/assets/js/11.901c2e78.js"><link rel="prefetch" href="/assets/js/13.d1134255.js"><link rel="prefetch" href="/assets/js/14.a6f71412.js"><link rel="prefetch" href="/assets/js/3.edcab5dc.js"><link rel="prefetch" href="/assets/js/4.035f5306.js"><link rel="prefetch" href="/assets/js/5.f00a8b48.js"><link rel="prefetch" href="/assets/js/6.049af0a1.js"><link rel="prefetch" href="/assets/js/7.15ed0f87.js"><link rel="prefetch" href="/assets/js/8.0fde7776.js"><link rel="prefetch" href="/assets/js/9.57955d3c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8487be1e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="https://github.com/kyle-alis/demo2/blob/main/docs/.vuepress/public/assets/images/alis_exchange.png?raw=true" alt="alis.exchange" class="logo"> <span class="site-name can-hide">alis.exchange</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"> <a href="https://github.com/alis-x/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"> <a href="https://github.com/alis-x/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Getting Started</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/getting-started/introduction.html" class="sidebar-link">Introduction</a></li><li><a href="/getting-started/quick-start.html" class="sidebar-link">Quick Start</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guides</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guides/make-your-first-request.html" aria-current="page" class="active sidebar-link">Make a request to a product</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guides/make-your-first-request.html#book-repository-example" class="sidebar-link">Book repository example</a></li><li class="sidebar-sub-header"><a href="/guides/make-your-first-request.html#next-steps" class="sidebar-link">Next Steps</a></li></ul></li><li><a href="/getting-started/command-line-interface.html" class="sidebar-link">Command Line Interface</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>References</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/references/resource-oriented-design.html" class="sidebar-link">Resource Oriented Design</a></li><li><a href="/references/core-concepts.html" class="sidebar-link">Core concepts</a></li></ul></section></li><li><a href="/other-resources/other-resources.html" class="sidebar-link">Other Resources</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="make-a-request-to-a-product"><a href="#make-a-request-to-a-product" class="header-anchor">#</a> Make a request to a product</h1> <blockquote><p>This section is supplementary to the <a href="/getting-started/quick-start.html">quickstart</a>. We recommend that you first complete the quickstart before</p></blockquote> <p>Given the underlying technologies used, <strong>alis.exchange</strong> provides the ability to generate client libraries for various
+supported coding languages. For users of the product, it allows you to programmatically access products natively in your
+code without having to wrangle obscure, unpredictable data objects (see <a href="/getting-started/quick-start.html">quickstart</a>).</p> <p>Irrespective of the language, this is done in two steps:</p> <ol><li>Establishing a client connection with the server.</li> <li>Using the connection to make a request.</li></ol> <p>Following the same Book example as the quickstart, this guide will step you through making requests in your own developer environment.</p> <blockquote><p>We currently only provide the guide for Go. Want to help us expand this to other languages? <a href="https://github.com/alis-x/docs/edit/main/docs/guides/make-your-first-request.md" target="_blank" rel="noopener noreferrer">Make a contribution<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>.</p></blockquote> <h2 id="book-repository-example"><a href="#book-repository-example" class="header-anchor">#</a> Book repository example</h2> <p>Foo is an organisation that builds products on <strong>alis.exchange</strong>. Their flagship book repository product,<code>BR</code>, provides
+details on digital books which they have available. The product defines a <code>book</code> resource as follows and has a
+<code>BookService</code> with two primary client facing methods that allows clients to list all available books and to get details
+on a specific book.</p> <p>The full <code>Books.proto</code> file is shown for reference purposes.</p> <div class="language-protobuf extra-class"><pre class="language-protobuf"><code><span class="token keyword">syntax</span> <span class="token operator">=</span> <span class="token string">&quot;proto3&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">package</span> foo<span class="token punctuation">.</span>br<span class="token punctuation">.</span>resources<span class="token punctuation">.</span>books<span class="token punctuation">.</span>v1<span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token string">&quot;google/protobuf/empty.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/api/resource.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/api/field_behavior.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/api/client.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/api/annotations.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/protobuf/timestamp.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/protobuf/field_mask.proto&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token string">&quot;google/type/date.proto&quot;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">option</span> go_package <span class="token operator">=</span> <span class="token string">&quot;go.protobuf.foo.alis.exchange/foo/br/resources/books/v1&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// Book service for foo.br.</span>
+<span class="token keyword">service</span> <span class="token class-name">BooksService</span> <span class="token punctuation">{</span>
+	<span class="token comment">// List all available books.</span>
+	<span class="token keyword">rpc</span> <span class="token function">ListBooks</span><span class="token punctuation">(</span><span class="token class-name">ListBooksRequest</span><span class="token punctuation">)</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token class-name">ListBooksResponse</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">option</span> <span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>http<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+			get<span class="token punctuation">:</span> <span class="token string">&quot;/resources/books/v1/books&quot;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+	<span class="token comment">// Get a specific book.</span>
+	<span class="token keyword">rpc</span> <span class="token function">GetBook</span><span class="token punctuation">(</span><span class="token class-name">GetBookRequest</span><span class="token punctuation">)</span> <span class="token keyword">returns</span> <span class="token punctuation">(</span><span class="token class-name">Book</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		<span class="token keyword">option</span> <span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>http<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+			get<span class="token punctuation">:</span> <span class="token string">&quot;/resources/store/v1/{name=books/*}&quot;</span>
+		<span class="token punctuation">}</span><span class="token punctuation">;</span>
+		<span class="token keyword">option</span> <span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>method_signature<span class="token punctuation">)</span> <span class="token operator">=</span> <span class="token string">&quot;name&quot;</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// The definition of a book resource.</span>
+<span class="token keyword">message</span> <span class="token class-name">Book</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">// The name of the book.</span>
+	<span class="token comment">// Format: books/{book}.</span>
+	<span class="token builtin">string</span> name <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> OUTPUT_ONLY<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+	<span class="token comment">// The display name of the book.</span>
+	<span class="token builtin">string</span> display_name <span class="token operator">=</span> <span class="token number">2</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+	<span class="token comment">// The authors of the book.</span>
+	<span class="token keyword">repeated</span> <span class="token builtin">string</span> authors <span class="token operator">=</span> <span class="token number">3</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+	<span class="token comment">// The publisher of the book</span>
+	<span class="token builtin">string</span> publisher <span class="token operator">=</span> <span class="token number">4</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Request message for [foo.br.resources.books.v1.BooksService.CreateBook].</span>
+<span class="token keyword">message</span> <span class="token class-name">CreateBookRequest</span> <span class="token punctuation">{</span>
+	<span class="token comment">// The book to create</span>
+	<span class="token positional-class-name class-name">Book</span> book <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Request message for [foo.br.resources.books.v1.BooksService.GetBook].</span>
+<span class="token keyword">message</span> <span class="token class-name">GetBookRequest</span> <span class="token punctuation">{</span>
+	<span class="token comment">// The book name is the unique identifier across organisations.</span>
+	<span class="token comment">// Format: books/{book}</span>
+	<span class="token builtin">string</span> name <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Request message for [foo.br.resources.books.v1.BooksService.ListBooks].</span>
+<span class="token keyword">message</span> <span class="token class-name">ListBooksRequest</span> <span class="token punctuation">{</span>
+	<span class="token comment">// The maximum number of books to return. The service may return fewer than</span>
+	<span class="token comment">// this value.</span>
+	<span class="token comment">// If unspecified, at most 100 books will be returned.</span>
+	<span class="token comment">// The maximum value is 1000; values above 1000 will be coerced to 1000.</span>
+	<span class="token builtin">int32</span> page_size <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> OPTIONAL<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Request message for [foo.br.resources.books.v1.BooksService.DeleteBook].</span>
+<span class="token keyword">message</span> <span class="token class-name">DeleteBookRequest</span> <span class="token punctuation">{</span>
+	<span class="token comment">// The resource name of the Book.</span>
+	<span class="token comment">// Format: books/{book}.</span>
+	<span class="token builtin">string</span> name <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">message</span> <span class="token class-name">ListBooksResponse</span> <span class="token punctuation">{</span>
+	<span class="token comment">// The books</span>
+	<span class="token keyword">repeated</span> <span class="token positional-class-name class-name">Book</span> books <span class="token operator">=</span> <span class="token number">1</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>google<span class="token punctuation">.</span>api<span class="token punctuation">.</span>field_behavior<span class="token punctuation">)</span> <span class="token operator">=</span> REQUIRED<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>We will be making requests to both the <code>ListBooks</code> and <code>GetBook</code> method by following the two steps provided in the introduction section.</p> <h3 id="_1-establish-the-client-connection"><a href="#_1-establish-the-client-connection" class="header-anchor">#</a> 1. Establish the client connection</h3> <p>Prior to making the requests, a client connection needs to be established to the server.</p> <p>The <code>NewConn</code> function is generated by the alis.exchange CLI when a new neuron is created. This is typically placed in a separate <code>Conn.go</code> file but is included as function in this example.</p> <p>The <code>NewConn</code> function requires the specification of a host URL which can be obtained by:</p> <ol><li>Navigating to the specific Cloud Run instance in the GCP Console.</li> <li>Obtaining the URL from the product owner.</li></ol> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;context&quot;</span>
+	<span class="token string">&quot;crypto/tls&quot;</span>
+	<span class="token string">&quot;crypto/x509&quot;</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;strings&quot;</span>
+
+	<span class="token string">&quot;google.golang.org/api/idtoken&quot;</span>
+	<span class="token string">&quot;google.golang.org/api/option&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/codes&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/credentials&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/credentials/oauth&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/status&quot;</span>
+
+	pb <span class="token string">&quot;go.protobuf.foo.alis.exchange/foo/br/resources/books/v1&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// The booksClient is defined as a global variable. It is declared once on init and used to call the various methods of the BooksService</span>
+<span class="token keyword">var</span> <span class="token punctuation">(</span>
+	booksClient pb<span class="token punctuation">.</span>BooksServiceClient
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">// Pre-declare err to avoid shadowing.</span>
+	<span class="token keyword">var</span> err <span class="token builtin">error</span>
+
+	<span class="token comment">// Declare the server host url and port.</span>
+	<span class="token comment">// This follows the format {{neuronID}}-{{majorVersion}}-{{hash}}-{{region}}.a.run.app:{{port}}</span>
+	<span class="token comment">// Typical predefined values are:</span>
+	<span class="token comment">//  - region: &quot;ew&quot;</span>
+	<span class="token comment">//	- port: &quot;443&quot;</span>
+	serverHost <span class="token operator">:=</span> <span class="token string">&quot;resources-books-v1-z5x5ywf7za-ew-443.a.run.app&quot;</span>
+
+	<span class="token comment">// Initialise connection to the books service.</span>
+	conn<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">NewConn</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> serverHost<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// Initialise the booksClient.</span>
+	booksClient <span class="token operator">=</span> pb<span class="token punctuation">.</span><span class="token function">NewBooksServiceClient</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> grpcTokenSource <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	oauth<span class="token punctuation">.</span>TokenSource
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Code generated by alis.exchange CLI. DO NOT EDIT.</span>
+<span class="token comment">//</span>
+<span class="token comment">// NewConn creates a new gRPC connection.</span>
+<span class="token comment">// host should be of the form domain:port, e.g., example.com:443</span>
+<span class="token keyword">func</span> <span class="token function">NewConn</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> host <span class="token builtin">string</span><span class="token punctuation">,</span> insecure <span class="token builtin">bool</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token operator">*</span>grpc<span class="token punctuation">.</span>ClientConn<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">var</span> opts <span class="token punctuation">[</span><span class="token punctuation">]</span>grpc<span class="token punctuation">.</span>DialOption
+	<span class="token keyword">if</span> host <span class="token operator">!=</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">{</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithAuthority</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> insecure <span class="token punctuation">{</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithInsecure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		systemRoots<span class="token punctuation">,</span> err <span class="token operator">:=</span> x509<span class="token punctuation">.</span><span class="token function">SystemCertPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err
+		<span class="token punctuation">}</span>
+		cred <span class="token operator">:=</span> credentials<span class="token punctuation">.</span><span class="token function">NewTLS</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tls<span class="token punctuation">.</span>Config<span class="token punctuation">{</span>
+			RootCAs<span class="token punctuation">:</span> systemRoots<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithTransportCredentials</span><span class="token punctuation">(</span>cred<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// use a tokenSource to automatically inject tokens with each underlying client request</span>
+	audience <span class="token operator">:=</span> <span class="token string">&quot;https://&quot;</span> <span class="token operator">+</span> strings<span class="token punctuation">.</span><span class="token function">Split</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> <span class="token string">&quot;:&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+	tokenSource<span class="token punctuation">,</span> err <span class="token operator">:=</span> idtoken<span class="token punctuation">.</span><span class="token function">NewTokenSource</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> audience<span class="token punctuation">,</span> option<span class="token punctuation">.</span><span class="token function">WithAudiences</span><span class="token punctuation">(</span>audience<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> status<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span>
+			codes<span class="token punctuation">.</span>Unauthenticated<span class="token punctuation">,</span>
+			<span class="token string">&quot;NewTokenSource: %s&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">,</span>
+		<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithPerRPCCredentials</span><span class="token punctuation">(</span>grpcTokenSource<span class="token punctuation">{</span>
+		TokenSource<span class="token punctuation">:</span> oauth<span class="token punctuation">.</span>TokenSource<span class="token punctuation">{</span>
+			tokenSource<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> grpc<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> opts<span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="make-a-request"><a href="#make-a-request" class="header-anchor">#</a> Make a request</h3> <p>The <code>booksClient</code> provides you all the methods available, with descriptions of the methods and a specification of what
+the request and responses are. Most IDEs allow you to explore these by hovering over client and method names, similar to
+the example shown below.</p> <p>Let us make our requests.</p> <h4 id="list-books"><a href="#list-books" class="header-anchor">#</a> List books</h4> <p>Firstly we will get a list of all the books calling the <code>ListBooks</code> methods and then print their display names in the console.</p> <p>Add the <code>printBookNames</code> function to the bottom of your Go file and make a call to the function from <code>main</code>.</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">var</span><span class="token punctuation">(</span><span class="token operator">...</span><span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token boolean">_</span> <span class="token operator">=</span> <span class="token function">printBookNames</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">printBookNames</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	allBooks<span class="token punctuation">,</span> err <span class="token operator">:=</span> booksClient<span class="token punctuation">.</span><span class="token function">ListBooks</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>pb<span class="token punctuation">.</span>ListBooksRequest<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span><span class="token string">&quot;could not list books: %v&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> book <span class="token operator">:=</span> <span class="token keyword">range</span> allBooks<span class="token punctuation">.</span>Books <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> book<span class="token punctuation">.</span>DisplayName<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h4 id="get-book"><a href="#get-book" class="header-anchor">#</a> Get book</h4> <p>Secondly, we will get a specific book and print all of its information in the console.</p> <p>Add the <code>printBookDetails</code> function to the bottom of your Go file and make a call to the function from <code>main</code> with the provided book name.</p> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token string">&quot;fmt&quot;</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token boolean">_</span> <span class="token operator">=</span> <span class="token function">printBookDetails</span><span class="token punctuation">(</span><span class="token string">&quot;books/c4a2&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">printBookDetails</span><span class="token punctuation">(</span>bookName <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	req <span class="token operator">:=</span> pb<span class="token punctuation">.</span>GetBookRequest<span class="token punctuation">{</span>Name<span class="token punctuation">:</span> bookName<span class="token punctuation">}</span>
+
+	book<span class="token punctuation">,</span> err <span class="token operator">:=</span> booksClient<span class="token punctuation">.</span><span class="token function">GetBook</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>req<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span><span class="token string">&quot;could not get book: %v&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> book<span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="full-code-example"><a href="#full-code-example" class="header-anchor">#</a> Full code example</h3> <p>The complete code for both examples are available below.</p> <details class="custom-block details"><summary>Click here to view full code example.</summary> <div class="language-go extra-class"><pre class="language-go"><code><span class="token keyword">package</span> main
+
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+	<span class="token string">&quot;context&quot;</span>
+	<span class="token string">&quot;crypto/tls&quot;</span>
+	<span class="token string">&quot;crypto/x509&quot;</span>
+	<span class="token string">&quot;log&quot;</span>
+	<span class="token string">&quot;strings&quot;</span>
+
+	<span class="token string">&quot;google.golang.org/api/idtoken&quot;</span>
+	<span class="token string">&quot;google.golang.org/api/option&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/codes&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/credentials&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/credentials/oauth&quot;</span>
+	<span class="token string">&quot;google.golang.org/grpc/status&quot;</span>
+
+	pb <span class="token string">&quot;go.protobuf.foo.alis.exchange/foo/br/resources/books/v1&quot;</span>
+<span class="token punctuation">)</span>
+
+<span class="token comment">// The booksClient is defined as a global variable. It is declared once on init and used to call the various methods of the BooksService</span>
+<span class="token keyword">var</span> <span class="token punctuation">(</span>
+	booksClient pb<span class="token punctuation">.</span>BooksServiceClient
+<span class="token punctuation">)</span>
+
+<span class="token keyword">func</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+	<span class="token comment">// Pre-declare err to avoid shadowing.</span>
+	<span class="token keyword">var</span> err <span class="token builtin">error</span>
+
+	<span class="token comment">// Declare the server host url and port.</span>
+	<span class="token comment">// This follows the format {{neuronID}}-{{majorVersion}}-{{hash}}-{{region}}.a.run.app:{{port}}</span>
+	<span class="token comment">// Typical predefined values are:</span>
+	<span class="token comment">//  - region: &quot;ew&quot;</span>
+	<span class="token comment">//	- port: &quot;443&quot;</span>
+	serverHost <span class="token operator">:=</span> <span class="token string">&quot;resources-books-v1-z5x5ywf7za-ew-443.a.run.app&quot;</span>
+
+	<span class="token comment">// Initialise connection to the books service.</span>
+	conn<span class="token punctuation">,</span> err <span class="token operator">:=</span> <span class="token function">NewConn</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> serverHost<span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		log<span class="token punctuation">.</span><span class="token function">Fatal</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// Initialise the booksClient.</span>
+	booksClient <span class="token operator">=</span> pb<span class="token punctuation">.</span><span class="token function">NewBooksServiceClient</span><span class="token punctuation">(</span>conn<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token boolean">_</span> <span class="token operator">=</span> <span class="token function">printBookNames</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token boolean">_</span> <span class="token operator">=</span> <span class="token function">printBookDetails</span><span class="token punctuation">(</span><span class="token string">&quot;books/c4a2&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">printBookNames</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	allBooks<span class="token punctuation">,</span> err <span class="token operator">:=</span> booksClient<span class="token punctuation">.</span><span class="token function">ListBooks</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>pb<span class="token punctuation">.</span>ListBooksRequest<span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span><span class="token string">&quot;could not list books: %v&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">for</span> <span class="token boolean">_</span><span class="token punctuation">,</span> book <span class="token operator">:=</span> <span class="token keyword">range</span> allBooks<span class="token punctuation">.</span>Books <span class="token punctuation">{</span>
+		fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> book<span class="token punctuation">.</span>DisplayName<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">printBookDetails</span><span class="token punctuation">(</span>bookName <span class="token builtin">string</span><span class="token punctuation">)</span> <span class="token builtin">error</span> <span class="token punctuation">{</span>
+	req <span class="token operator">:=</span> pb<span class="token punctuation">.</span>GetBookRequest<span class="token punctuation">{</span>Name<span class="token punctuation">:</span> bookName<span class="token punctuation">}</span>
+
+	book<span class="token punctuation">,</span> err <span class="token operator">:=</span> booksClient<span class="token punctuation">.</span><span class="token function">GetBook</span><span class="token punctuation">(</span>context<span class="token punctuation">.</span><span class="token function">Background</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>req<span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> fmt<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span><span class="token string">&quot;could not get book: %v&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	fmt<span class="token punctuation">.</span><span class="token function">Printf</span><span class="token punctuation">(</span><span class="token string">&quot;%s\n&quot;</span><span class="token punctuation">,</span> book<span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> <span class="token boolean">nil</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> grpcTokenSource <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+	oauth<span class="token punctuation">.</span>TokenSource
+<span class="token punctuation">}</span>
+
+<span class="token comment">// Code generated by alis.exchange CLI. DO NOT EDIT.</span>
+<span class="token comment">//</span>
+<span class="token comment">// NewConn creates a new gRPC connection.</span>
+<span class="token comment">// host should be of the form domain:port, e.g., example.com:443</span>
+<span class="token keyword">func</span> <span class="token function">NewConn</span><span class="token punctuation">(</span>ctx context<span class="token punctuation">.</span>Context<span class="token punctuation">,</span> host <span class="token builtin">string</span><span class="token punctuation">,</span> insecure <span class="token builtin">bool</span><span class="token punctuation">)</span> <span class="token punctuation">(</span><span class="token operator">*</span>grpc<span class="token punctuation">.</span>ClientConn<span class="token punctuation">,</span> <span class="token builtin">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+	<span class="token keyword">var</span> opts <span class="token punctuation">[</span><span class="token punctuation">]</span>grpc<span class="token punctuation">.</span>DialOption
+	<span class="token keyword">if</span> host <span class="token operator">!=</span> <span class="token string">&quot;&quot;</span> <span class="token punctuation">{</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithAuthority</span><span class="token punctuation">(</span>host<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token keyword">if</span> insecure <span class="token punctuation">{</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithInsecure</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+		systemRoots<span class="token punctuation">,</span> err <span class="token operator">:=</span> x509<span class="token punctuation">.</span><span class="token function">SystemCertPool</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+			<span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> err
+		<span class="token punctuation">}</span>
+		cred <span class="token operator">:=</span> credentials<span class="token punctuation">.</span><span class="token function">NewTLS</span><span class="token punctuation">(</span><span class="token operator">&amp;</span>tls<span class="token punctuation">.</span>Config<span class="token punctuation">{</span>
+			RootCAs<span class="token punctuation">:</span> systemRoots<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithTransportCredentials</span><span class="token punctuation">(</span>cred<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+	<span class="token comment">// use a tokenSource to automatically inject tokens with each underlying client request</span>
+	audience <span class="token operator">:=</span> <span class="token string">&quot;https://&quot;</span> <span class="token operator">+</span> strings<span class="token punctuation">.</span><span class="token function">Split</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> <span class="token string">&quot;:&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+	tokenSource<span class="token punctuation">,</span> err <span class="token operator">:=</span> idtoken<span class="token punctuation">.</span><span class="token function">NewTokenSource</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> audience<span class="token punctuation">,</span> option<span class="token punctuation">.</span><span class="token function">WithAudiences</span><span class="token punctuation">(</span>audience<span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token keyword">if</span> err <span class="token operator">!=</span> <span class="token boolean">nil</span> <span class="token punctuation">{</span>
+		<span class="token keyword">return</span> <span class="token boolean">nil</span><span class="token punctuation">,</span> status<span class="token punctuation">.</span><span class="token function">Errorf</span><span class="token punctuation">(</span>
+			codes<span class="token punctuation">.</span>Unauthenticated<span class="token punctuation">,</span>
+			<span class="token string">&quot;NewTokenSource: %s&quot;</span><span class="token punctuation">,</span> err<span class="token punctuation">,</span>
+		<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+	opts <span class="token operator">=</span> <span class="token function">append</span><span class="token punctuation">(</span>opts<span class="token punctuation">,</span> grpc<span class="token punctuation">.</span><span class="token function">WithPerRPCCredentials</span><span class="token punctuation">(</span>grpcTokenSource<span class="token punctuation">{</span>
+		TokenSource<span class="token punctuation">:</span> oauth<span class="token punctuation">.</span>TokenSource<span class="token punctuation">{</span>
+			tokenSource<span class="token punctuation">,</span>
+		<span class="token punctuation">}</span><span class="token punctuation">,</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+	<span class="token keyword">return</span> grpc<span class="token punctuation">.</span><span class="token function">Dial</span><span class="token punctuation">(</span>host<span class="token punctuation">,</span> opts<span class="token operator">...</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div></details> <h2 id="next-steps"><a href="#next-steps" class="header-anchor">#</a> Next Steps</h2> <p><strong>Ready to join alis.exchange?</strong> <a href="https://alis.exchange/signup" target="blank">Get in touch</a>.</p> <p>Already signed up? <a href="/getting-started/command-line-interface.html">Get your local environment set up</a></p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/alis-x/docs/edit/main/docs/guides/make-your-first-request.md" target="_blank" rel="noopener noreferrer">Edit this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.d4e0bb3c.js" defer></script><script src="/assets/js/2.51f44511.js" defer></script><script src="/assets/js/12.928467b4.js" defer></script>
+  </body>
+</html>
