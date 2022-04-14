@@ -1,6 +1,6 @@
 # Setting up Google Cloud Endpoints for your API Gateway
 
-The following combines learning from the documentation for the [Cloud Endpoints Service](https://cloud.google.com/endpoints/docs) with context in the alis.exchnage setup.
+The following combines learning from the documentation for the [Cloud Endpoints Service](https://cloud.google.com/endpoints/docs) with context in the alis.exchange setup.
 
 ## Background
 Google Cloud Endpoints allows us to setup API Gateways for our gRPC backend services enabling our service to be called via regular http requests. 
@@ -23,7 +23,7 @@ In the case of the `br` product for the `foo` organisation, we would create the 
 
 When prompted whether you would like to add an environment variable, respond with `y`. Then, assign the name `ALIS_OS_HASH` with value `tbc`. After deploying our service, we will be able to change this value at a later stage.
 
-Before doing anything else, we need to enable the endpoints service for our project. We do this by adding the following line to the `apis.tf` file to enable the endpoints service:
+Before doing anything else, we need to enable the endpoints service for our project. We do this by adding the following lines to the `apis.tf` file in the `proto/foo/br/services/gateway/v1` directory     to enable the endpoints service:
 ```terraform
 resource "google_project_service" "endpoints_googleapis_com" {
   project = google_project.product_deployment.project_id
