@@ -11,37 +11,37 @@ In this section we provide an overview of the process to build products on **ali
 offered to the world and consists of one or more underlying services which provide the functionality of the product. 
 
 In this overview, it is the building of these underlying services which we are interested in. The high-level process that is followed
-when creating services are depicted below.
+when creating services is depicted below.
 
 ![](./img/overview-build-process.svg)
 
 Each of the steps are explained in the following sections and follow the structure:<br>
 - Overview of the step; <br>
 - 👨‍💻 **User actions** - the actions that are required from the user;<br>
-- 🏗 **alis.exchange** - what is facilitated by us in the background; and<br>
+- 🏗 **alis.exchange** - what is facilitated by us in the background;<br>
 
 > ‼️ The build example provides detailed steps for the user actions where this section aims to communicate the high-level overview of what would be done.
-
+^This bit cofnuses me a bit - what is the build example? Where can I find it? Maybe we can make it a hyperlink to the example being referred to
 
 ## Create protocol buffer
 
-Protocol buffers (proto) is the cornerstone of what we build on **alis.exchange**. Creating the proto is the starting point for building out the functionality for your product.
+Protocol buffers (defined in `.proto` files) are the cornerstone of what we build on **alis.exchange**. Creating the protocol buffers is the starting point for building out the functionality of your product.
 
 #### 👨‍💻 User actions
 Simply run the `alis proto create` command from the terminal.
 
 #### 🏗 alis.exchange
-In the background, **alis.exchange** creates a protocol buffer resource within the product and provides a boilerplate proto file which is to be defined in the following step. 
+In the background, **alis.exchange** creates a ProtocolBuffer resource within the product and provides a boilerplate `.proto` file which is to be defined in the following step. 
 
 ## Define methods and message
 
-Defining the methods and messages in the proto is one of the most important aspects of the build process as itserves as the source of truth for the functionality of the products. The [Resource-oriented design](../../references/resource-oriented-design.md) pattern is widely adopted and provide detailed guidelines as to how to approach the definitions.
+Defining the methods and messages in the `.proto` is one of the most important aspects of the build process. It serves as the source of truth for the functionality of the products, defining the resources and methods acting on the resources for a given service. The [Resource-oriented design](../../references/resource-oriented-design.md) pattern is widely adopted and provides detailed guidelines as to how to approach the definitions.
 
 #### 👨‍💻 User actions
 
-The user is required to flesh out the proto, and should be consistent with [Google's API Improvement Proposals](https://google.aip.dev/1). Various tooling, such as linters, exists to aid this process.
+The user is required to flesh out the `.proto`, and should be consistent with [Google's API Improvement Proposals](https://google.aip.dev/1). Various tooling, such as linters, exists to aid this process.
 
-The primary questions that developers aim to answer during this step is:
+The primary questions that developers aim to answer during this step are:
 
 1. What are the resources that we are considering? These will be translated into the `messages` in the proto.<br>
 _eg. In the asset management space this may be a `porfolio` and `holdings`._
@@ -50,12 +50,12 @@ _eg. `portfolio` is the parent of `holdings`._
 3. What operations are to be performed? These will be translated into the `methods` of the proto, housed in a `service`.<br>
 _eg. [Standard methods](https://google.aip.dev/131) such as `CreatePortfolio`, `UpdatePortfolio` or [custom methods](https://google.aip.dev/136) such as `CheckPortfolioCompliance`._
 
-Since the protos sit within a version control repo, multiple developers may collaborate and iterate on the proto design. Once the proto is defined and ready to be implemented, it can the be `released`.
+Since the `.proto` files sit within a version controlled git repository, multiple developers may collaborate and iterate on their design. Once the `.proto` is defined and ready to be implemented, it can then be `released`.
 
 
 ## Release protocol buffer
 
-Releasing a protocol buffer is a big thing in our world. It communicates that the current state of the proto is the source of truth. In other words, it is what should be implemented on your side and what clients can expect to consume. There is a lot that also happens in the background which we will unpack in the following section.
+Releasing a protocol buffer is a big thing in our world. It communicates that the current state of the `.proto` file is the source of truth. In other words, it is what should be implemented on your side and what clients can expect to consume. There is a lot that also happens in the background which we will unpack in the following section.
 
 #### 👨‍💻 User actions
 Simply run the `alis proto release` command from the terminal.
@@ -67,7 +67,7 @@ The release of the proto automatically kicks off a lot of processes on **alis.ex
 - Auto-configuring API gateways for the services specified in the protos. This provides HTTP endpoints for the gRPC methods, allowing for traditional REST calls to be made to the endpoints.
 - Auto-generating documentation for your product directly from your proto definitions. An example can be seen at: 
 
-This single source of truth also sets the foundation for additional auto-generated aspects, which is discussed in the following sections.
+This single source of truth also sets the foundation for additional auto-generated aspects, which are discussed in the following sections.
 
 ## Create neuron
 
@@ -77,28 +77,28 @@ A neuron is simply a unit of compute which consists of a set of cloud infrastruc
 Simply run the `alis neuron create` command from the terminal and follow the prompts.
 
 #### 🏗 alis.exchange
-In the background, **alis.exchange** will provide prepopulated Terraform files based on the neuron requirements. Furthermore, code template files are also available and uses a templating engine along with the latest protocol buffer release to auto-generate server implementation code in the supported languages.
+In the background, **alis.exchange** will provide prepopulated Terraform files based on the neuron requirements. Furthermore, code template files are also available and use a templating engine along with the latest protocol buffer release to auto-generate server implementation code in the supported languages.
 
 ## Specify infrastructure
 
-The Terraform files define the required infrastructure needs that will be applied in the respective cloud environments.
+The Terraform files define the required infrastructure needs, that will be applied in the respective cloud environments.
 
 #### 👨‍💻 User actions
-When creating the neuron, **alis.exchange** provided a set of Terraform files. These can either be customised or additional specifications may added based on the needs of your implementation. The [documentation on the Terraform site](https://registry.terraform.io/providers/hashicorp/google/latest/docs) serve as an excellent reference for this.
+When creating the neuron, **alis.exchange** provided a set of Terraform files. These can either be customised or additional specifications may added based on the needs of your implementation. The [documentation on the Terraform site](https://registry.terraform.io/providers/hashicorp/google/latest/docs) serves as an excellent reference for this.
 
 #### 🏗 alis.exchange
 The **alis.exchange** CLI has the command available `alis gen terraform` which is able to generate commonly used Terraform specs out of the box. 
 
 ## Implement code
 
-In the majority of cases, there is some form of code implementation which realises the methods defined in protocol buffer, referred to as the implementation of the server. In this step, one effectively builds out the APIs to process the request, execute logic in the code and return a response. 
+In the majority of cases, there is some form of code implementation which realises the methods defined in the protocol buffer, referred to as the implementation of the server. In this step, one effectively builds out the APIs to process the request, execute logic in the code and return a response. 
 
 #### 👨‍💻 User actions
 1. Using either the auto-generated template files or own custom files, implement the logic of the protocol buffers by using the auto-generated client libraries.
 2. If necessary, customise the `Dockerfile` to ensure that the containerisation of the code will be correct.
 
 #### 🏗 alis.exchange
-The **alis.exchange** CLI has the command available `alis gen code` which is able to generate files in various languages.
+The **alis.exchange** CLI has the command available `alis gen code` which is able to generate boilerplate files for the server implementation in various languages.
 
 ## Release neuron
 
